@@ -3,6 +3,7 @@ package CoffeeShop;
 import java.util.ArrayList;
 
 public class Order {
+    static int id;
     int number;
     int table;
     double totalPrice;
@@ -12,6 +13,7 @@ public class Order {
 
 
     public Order(int number,int table, double totalPrice,int calory) {
+        id++;
         this.number=number;
         this.table = table;
         this.totalPrice = totalPrice;
